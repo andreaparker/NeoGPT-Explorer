@@ -15,7 +15,7 @@ docker-compose up
 
 You may run into some errors about not being able to authenticate to pull down `3.9-slim`; in that case, double-check that your `~/.docker/config.json` file _does not_ have a line that reads `	"credsStore": "desktop"`in it. If it does, delete the line. (For more information see [this page](https://github.com/docker/docker-credential-helpers/issues/60#issuecomment-344846089).)
 
-3. On the first run, you need to seed the database with the following command
+3. On the first run, you need to seed the database with the following command; note that you may need to first install `pip` via `conda install pip` depenending on how you set up your environment:
 
 ```
 sh seed_database.sh
