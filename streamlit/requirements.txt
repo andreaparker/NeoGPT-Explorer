@@ -3,3 +3,4 @@ streamlit-chat==0.0.2.1
 openai==0.26.5
 neo4j==5.5.0
 altair==4.2.2
+pillow>=10.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
